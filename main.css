@@ -332,7 +332,7 @@ header .navlink[href="#"] {
     background-color: #2c477a;
     margin: 50px 100px;
     padding: 40px;
-    height: 3000px;
+    height: 100%;
     width: 90%;
     border-radius: 15px;
 }
