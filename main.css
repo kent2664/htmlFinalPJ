@@ -19,7 +19,7 @@ header nav {
 }
 
 main {
-    height: 2800px;
+    height: auto;
 }
 
 /* Nav Links (nav > ul > li > a)*/
@@ -109,7 +109,7 @@ header .navlink[href="#"] {
     margin-right: 30px;
 }
 
-.button-section button[type="submit"]:hover{
+.button-section button[type="submit"]:hover {
     color: #28f4ff;
     border-color: #28f4ff;
     border-width: 6px;
@@ -154,14 +154,16 @@ header .navlink[href="#"] {
 }
 
 .ability-section,
-.collection-section {
+.collection-section,
+#form-contact {
     display: block;
     padding: 30px 30px;
     margin-top: 50px;
 }
 
 .ability-section h2,
-.collection-section h2 {
+.collection-section h2,
+#form-contact h2 {
     text-align: center;
     font-size: 32px;
     color: #E7BC72;
@@ -219,11 +221,152 @@ header .navlink[href="#"] {
     box-shadow: 3px 3px 8px #16233b;
 }
 
-.collection img:hover{
+.collection img:hover {
     box-shadow: 5px 5px 20px #16233b;
     transform: scale(1.15);
     z-index: 3;
 }
+
+.dev-title h2,
+.collection-title h2 {
+    margin-top: 100px;
+    font-size: 54px;
+    color: #E7BC72;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.stuck-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #2c477a;
+    margin: 50px 100px;
+    padding: 40px;
+    gap: 30px;
+    height: 250px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.languages {
+    border-right: 2px solid #fceef6;
+    margin-right: 20px;
+}
+
+/* delete last border */
+.languages:last-child {
+    border-right: none;
+}
+
+.languages h3 {
+    color: #fceef6;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+
+.languages p {
+    color: #fceef6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.experience-table {
+    background-color: #2c477a;
+    border-radius: 15px;
+    margin: 50px 100px;
+    color: #fceef6;
+    width: 90%;
+}
+
+.experience-table table {
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    border-radius: 15px;
+    font-size: 32px;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.experience-table table td,
+.experience-table table th {
+    text-align: center;
+    padding: 8px;
+    height: 80px;
+}
+
+.experience-table table tbody tr:nth-child(odd) {
+    background-color: #3b5ea0;
+}
+
+.experience-table table tbody tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.experience-table table tbody tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+.experience-table table tbody tr:last-child th:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.experience-table table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.photographs {
+    display: grid;
+    grid-template-areas:
+        "imageMain1 imageMain1 imageMain1 imageMain1"
+        "imageSub1 imageSub1 imageSub2 imageSub2"
+        ". imageMain2 imageMain2  ."
+        ". imageMain2 imageMain2 ."
+        "imageSub3 . . imageSub4";
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-gap: 80px;
+    background-color: #2c477a;
+    margin: 50px 100px;
+    padding: 40px;
+    height: 3000px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.photographs img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#imageMain1 {
+    grid-area: imageMain1;
+}
+
+#imageSub1 {
+    grid-area: imageSub1;
+}
+
+#imageSub2 {
+    grid-area: imageSub2;
+}
+
+#imageSub3 {
+    grid-area: imageSub3;
+}
+
+#imageSub4 {
+    grid-area: imageSub4;
+}
+
+#imageMain2 {
+    grid-area: imageMain2;
+}
+
 
 footer {
     height: 150px;

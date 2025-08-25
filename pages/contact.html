@@ -23,23 +23,21 @@
             <ul id="linkNav">
                 <li><a href="../index.html" class="navlink">Home</a></li>
                 <li><a href="./development.html" class="navlink">Development</a></li>
-                <li><a href="#" class="navlink" id="current-page">Collections</a></li>
-                <li><a href="./contact.html" class="navlink">Contact</a></li>
+                <li><a href="./collections.html" class="navlink">Collections</a></li>
+                <li><a href="#" class="navlink" id="current-page">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="collection-title">
-            <h2>Photographs</h2>
-        </div>
-        <div class="photographs">
-            <img id="imageMain1" src="../assets/images/DSC08872.jpg">
-            <img id="imageSub1" src="../assets/images/DSC02498.jpg">
-            <img id="imageSub2" src="../assets/images/DSC03774.jpg">
-            <img id="imageMain2" src="../assets/images/DSC02774.jpg">
-            <img id="imageSub4" src="../assets/images/DSC01301.jpg">
-            <img id="imageSub5" src="../assets/images/DSC00258.jpg">
-        </div>
+        <form id="form-contact" action="/submit-path" method="post">
+            <h2>Contact</h2>
+            <h3>Fill the form so that our team can reach out to you</h3>
+            <input type="text" id="name" name="name" placeholder="  Name">
+            <input type="email" id="email" name="email" placeholder="  Email">
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="  Phone Number">
+            <span class="empty"></span>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <nav aria-label="Footer navigation">
