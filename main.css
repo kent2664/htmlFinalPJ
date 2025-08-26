@@ -162,8 +162,7 @@ header .navlink[href="#"] {
 }
 
 .ability-section h2,
-.collection-section h2,
-#form-contact h2 {
+.collection-section h2 {
     text-align: center;
     font-size: 32px;
     color: #E7BC72;
@@ -228,7 +227,8 @@ header .navlink[href="#"] {
 }
 
 .dev-title h2,
-.collection-title h2 {
+.collection-title h2,
+.contact-title h2 {
     margin-top: 100px;
     font-size: 54px;
     color: #E7BC72;
@@ -366,6 +366,97 @@ header .navlink[href="#"] {
 #imageMain2 {
     grid-area: imageMain2;
 }
+
+#form-contact {
+    display: grid;
+    grid-template-areas:
+        'heading heading heading heading'
+        'name name detail detail'
+        'email email detail detail'
+        'phone phone detail detail'
+        'submit submit submit submit';
+    grid-gap: 20px;
+    background-color: #2c477a;
+    border-radius: 15px;
+    width: 90%;
+    margin: 2rem 5rem;
+}
+
+#form-contact h3 {
+    grid-area: heading;
+    color: #c49236;
+}
+
+#form-contact input[type="text"],
+#form-contact input[type="email"],
+#form-contact input[type="tel"] {
+    width: 80%;
+    height: 60px;
+    background-color: #3b5ea0;
+    border: none;
+    border-bottom: 2px solid #c49236;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+#detail-field textarea {
+    width: 80%;
+    height: 90%;
+    background-color: #3b5ea0;
+    border: none;
+    border-bottom: 2px solid #c49236;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    margin-top: 10px;
+    resize: none;
+}
+
+#name-field {
+    grid-area: name;
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#phone-field {
+    grid-area: phone;
+}
+
+#detail-field {
+    grid-area: detail;
+}
+
+#form-contact button[type="submit"] {
+    grid-area: submit;
+    margin: 50px 50px;
+
+    width: 80%;
+    height: 60px;
+
+    background-color: #ff4714;
+    color: #fceef6;
+    border: none;
+    border-radius: 50px;
+    box-shadow: none;
+    outline: none;
+    justify-self: center;
+    align-self: bottom;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#form-contact label {
+    display: block;
+    color: #fceef6;
+}
+
+
 
 
 footer {

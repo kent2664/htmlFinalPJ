@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Find</title>
     <link rel="stylesheet" href="./main.css">
+    <title>contact</title>
+    <style>
+        header nav a img {
+            width: 100px;
+            margin-left: 50px
+        }
+    </style>
 </head>
-<body>
+
+<body style="background-color:#20355B;">
     <header>
-        <nav>
-            <a href="./index.html">
-                <img src="./assets/images/birdlogo.png" alt="BIRD Logo">
+        <nav aria-label="Primary navigation">
+            <a href="#">
+                <img src="./assets/images/logo.png" alt="Logo">
             </a>
-            <span></span>
-            <ul>
-                <li><a href="./index.html" class="navlink">Home</a></li>
-                <li><a href="./pages/about.html" class="navlink">About</a></li>
-                <li><a href="./pages/services.html" class="navlink">Services</a></li>
+            <ul id="linkNav">
+                <li><a href="#" class="navlink" id="current-page">Home</a></li>
+                <li><a href="./pages/development.html" class="navlink">Development</a></li>
+                <li><a href="./pages/collections.html" class="navlink">Collections</a></li>
                 <li><a href="./pages/contact.html" class="navlink">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div style="text-align: center; margin-top: 50px;">
+        <div style="text-align: center; margin-top: 50px; height:600px;">
             <h1 style="text-align: center;">404 Not Found</h1>
             <p style="text-align: center;">The page you are looking for does not exist.</p>
             <a href="./index.html" class="navlink">Back to Home</a>
         </div>
     </main>
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#" class="navlink">Home</a></li>
+                <li><a href="./pages/development.html" class="navlink">Development</a></li>
+                <li><a href="./pages/collections.html" class="navlink">Collections</a></li>
+                <li><a href="./pages/contact.html" class="navlink">Contact</a></li>
+            </ul>
+        </nav>
+        <hr style="margin-bottom: 15px;">
+        <span style="vertical-align: bottom;">&copy; 2025 My Website.</span>
+    </footer>
 </body>
+
 </html>
