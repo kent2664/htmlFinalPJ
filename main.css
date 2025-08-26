@@ -194,7 +194,7 @@ header .navlink[href="#"] {
 }
 
 .skill-detail {
-    font-size: 18px;
+    font-size: 20px;
     color: #FCEEF6;
 }
 
@@ -434,7 +434,7 @@ header .navlink[href="#"] {
     grid-area: submit;
     margin: 50px 50px;
 
-    width: 80%;
+    width: 30%;
     height: 60px;
 
     background-color: #ff4714;
